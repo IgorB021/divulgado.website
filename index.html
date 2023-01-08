@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+  <head> <span id="number"></span> pessoas assistindo o vídeo agora!
+
+<script>
+function add(){number+=Math.floor((Math.random()*6)+1);document.getElementById("number").innerHTML=number;setTimeout("add()",10000);}        
+function generate(){number=Math.floor(Math.random()*1143)+1578;document.getElementById("number").innerHTML=number;add();}
+generate();</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
